@@ -31,3 +31,9 @@ li {
   font-size: medium;
   margin-top: 0;
 }
+input{
+  margin:3% 40%;
+  height: 1.5rem;
+  border-color: rgb(41, 5, 202);
+  border-radius: 5px;
+}

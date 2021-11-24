@@ -4,14 +4,12 @@ import "./App.css";
 const Country = (props) => {
   return (
     <div className="country-info">
-      <img src={props.flag} alt="" />
-      {console.log(props.flag)}
-      <h5>{props.name}</h5>
-      {console.log(props.name)}
+      <img src={props.Flag} alt="" />
+      <h5>{props.Name}</h5>
       <ul>
-        <li key={3}>Population: {props.population}</li>
-        <li key={4}>Region: {props.region}</li>
-        <li key={5}>Capital: {props.capital}</li>
+        <li key={3}>Population: {props.Population}</li>
+        <li key={4}>Region: {props.Region}</li>
+        <li key={5}>Capital: {props.Capital}</li>
       </ul>
     </div>
   );
