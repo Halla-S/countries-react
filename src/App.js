@@ -3,6 +3,7 @@ import "./App.css";
 import Country from "./Country";
 import Data from "./allCountries.json";
 
+
 function App() {
    let [searchTerm, setSearchTerm] = useState("");
   return (
@@ -23,6 +24,8 @@ function App() {
                   .includes(searchTerm.toLocaleLowerCase())
               ) {
                 return country;
+              }else{
+                return false;
               }
             })
         .map((country) => {
