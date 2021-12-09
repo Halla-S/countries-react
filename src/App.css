@@ -1,17 +1,45 @@
+/* body {
+  background: ;
+} */
 .main {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 80%;
-  background: rgb(219, 213, 213);
+  background: rgb(204, 176, 176);
   justify-content: space-around;
+}
+.countries{
+  display: flex;
+  flex-direction: column;
+  margin-top:-2rem;
+  border-style:solid;
+  background: rgb(204, 176, 176);
+}
+.darkMode{
+  display: flex;
+  flex-direction: column;
+  margin-top:-2rem;
+  border-style:solid;
+  background: rgb(41, 36, 36);
+
 }
 .country-info {
   display: flex;
   flex-direction: column;
   width: 25%;
-  background: rgb(250, 247, 247);
+  background: rgb(190, 161, 161);
+  margin: 1%;
+  height: 10%;
+  align-items: center;
+  border-radius: 5px;
+}
+.country-dark {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  background: rgb(51, 45, 45);
   margin: 1%;
   height: 10%;
   align-items: center;
@@ -46,4 +74,22 @@ select{
   margin-top:1rem;
   height:2rem;
   width: 10rem;
+}
+h2{
+  
+  margin-right: 38%;
+  align-items: center;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+  height:4rem;
+  background: rgb(190, 161, 161);
+  
+}
+button{
+  border-style: none;
+  background: rgb(190, 161, 161);
+  margin-right: 3rem;
 }

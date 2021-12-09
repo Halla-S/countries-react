@@ -7,8 +7,17 @@ import Options from "./Options";
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
   const [country, setCountry] = useState(Data);
+  const [clicked,setClicked] = useState(true);
+  const clickHandler =()=>{
+    setClicked(!clicked);
+  };
   return (
-    <div>
+    <div className={clicked ? "darkMode" : "countries"}>
+      <header>
+        <h2>Where In The World?</h2>
+
+        <button onClick={clickHandler}>Dark Mode</button>
+      </header>
       <div className="select-search">
         <input
           type="text"
